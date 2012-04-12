@@ -1,6 +1,7 @@
 $ ->
   hash = window.location.hash.substring 1
   unless hash == ''
+    $('#url').val hash
     update_player hash
   $('button').bind 'click', (event) =>
     update_player $('#url').val()

@@ -5,7 +5,10 @@
     var hash,
       _this = this;
     hash = window.location.hash.substring(1);
-    if (hash !== '') update_player(hash);
+    if (hash !== '') {
+      $('#url').val(hash);
+      update_player(hash);
+    }
     return $('button').bind('click', function(event) {
       return update_player($('#url').val());
     });
