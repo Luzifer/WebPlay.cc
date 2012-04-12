@@ -10,10 +10,24 @@
   <h1>WebPlay.cc - Your online stream player</h1>
 </header>
 <section>
-
+  <p class="instruction">
+    Just enter any URL to an <strong>MP3 .pls</strong> playlist
+    (often titled as winamp playlist / stream) and let me do
+    the rest for you.<br />
+    Just remember: Don't close this tab or your stream will
+    stop to play.
+  </p>
+  <p>
+    <label for="url">Full URL to your playlist file:</label><br />
+    <input type="text" name="url" id="url" />
+  </p>
+  <p>
+    <button>Lets play this!</button>
+  </p>
+  <div id="jscontainer"></div>
 </section>
 <footer>
-
+  Idea and realization by <a href="http://blog.knut.me">Knut Ahlers</a>
 </footer>
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>

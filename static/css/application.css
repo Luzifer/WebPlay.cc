@@ -1,5 +1,68 @@
+@import url(//fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+body {
+  background-color: #efefef;
+  font-family: 'Droid Sans';
+  font-size: 14px;
+  line-height: 1.3em;
+}
+
+header, section, footer {
+  width: 960px;
+  margin: 0 auto;
+}
+
 header {
-  background: transparent url(../images/logo.png) center center;
-  height: 100px;
+  background: transparent url(../images/logo.png) center center no-repeat;
+  height: 150px;
   text-indent: -999em;
+}
+
+section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+section p.instruction {
+  margin-bottom: 2em;
+}
+
+section label {
+  font-weight: bold;
+}
+
+.center {
+  margin: 0 auto;
+  width: 470px;
+}
+
+section input {
+  background: #f2f2f2;
+  border: 1px solid #bbb;
+  font-family: 'Droid Sans';
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+  width: 80%;
+}
+
+section button {
+  background-color: navy;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+
+footer {
+  border-top: 1px solid #bbb;
+  color: #bbb;
+  font-size: 0.8em;
+  margin-top: 30px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+footer a {
+  color: #bbb;
 }

@@ -1,6 +1,6 @@
 <?php
 
-require_once '/Users/luzifer/git/webplay.cc/lib/framework/dispatcher.php';
+require_once 'lib/framework/dispatcher.php';
 
 // BaseAutoLoader::register_base_lib('mysql');
 
