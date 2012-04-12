@@ -9,8 +9,11 @@
       $('#url').val(hash);
       update_player(hash);
     }
-    return $('button').bind('click', function(event) {
+    $('button').bind('click', function(event) {
       return update_player($('#url').val());
+    });
+    return $('#url').bind('keyup', function(event) {
+      if (event.keyCode === 13) return $('button').click();
     });
   });
 
@@ -19,6 +22,7 @@
   };
 
   update_player = function(playlist_url) {
+    window.location.hash = playlist_url;
     return $.ajax('/api/get_stream_file.api', {
       type: 'POST',
       dataType: 'jsonp',

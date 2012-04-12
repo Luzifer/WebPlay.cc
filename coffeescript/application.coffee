@@ -5,11 +5,15 @@ $ ->
     update_player hash
   $('button').bind 'click', (event) =>
     update_player $('#url').val()
+  $('#url').bind 'keyup', (event) =>
+    if event.keyCode == 13
+      $('button').click()
 
 delay = (secs, callback) ->
   window.setTimeout(callback, secs)
 
 update_player = (playlist_url) ->
+  window.location.hash = playlist_url
   $.ajax '/api/get_stream_file.api',
     type: 'POST'
     dataType: 'jsonp'
