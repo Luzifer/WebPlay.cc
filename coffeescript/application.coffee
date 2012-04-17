@@ -57,7 +57,7 @@ update_player = (playlist_url) ->
           sound.appendTo audio
         audio.appendTo $('#flashcontainer')
 
-        delay 5000, ->
+        delay 15000, ->
           if $('audio')[0].currentTime < 1
             alert 'I\'m sorry but the browser seems not to be able to play that stream. ' +
               'When it is a MP3 stream they made strange things with it...'

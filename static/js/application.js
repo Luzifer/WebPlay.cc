@@ -60,7 +60,7 @@
             sound.appendTo(audio);
           }
           audio.appendTo($('#flashcontainer'));
-          return delay(5000, function() {
+          return delay(15000, function() {
             if ($('audio')[0].currentTime < 1) {
               return alert('I\'m sorry but the browser seems not to be able to play that stream. ' + 'When it is a MP3 stream they made strange things with it...');
             }
